@@ -1,8 +1,8 @@
 import React from "react";
 
 export default function GetRandonNumber(props) {
-    const min = props.min
-    const max = props.max
+    const { min, max } = props;
+
     const RandomNumber = parseInt(Math.random() * (max - min));
     return (
         <div>
